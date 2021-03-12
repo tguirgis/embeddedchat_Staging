@@ -10,16 +10,16 @@
 
 <meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<meta>
+</meta>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = 'en-US'; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = 'Chat Unavailable'; //(Defaults to Agent Offline)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -40,13 +40,13 @@
 			[
 				{
 					"label":"Account Code",
-					"value": 'AccountCode',
+					"value": 'bb123',
 					"transcriptFields":[ "Account_Code__c" ],
 					"displayToAgent":true
 				},
 				{
 					"label":"User ID",
-					"value": 'userID',
+					"value": 'userID test',
 					"transcriptFields":[ "User_ID__c" ],
 					"displayToAgent":true
 				}
@@ -54,16 +54,16 @@
 
 		embedded_svc.init(
 			'https://fleetcorna--stagingdev.my.salesforce.com',
-			'https://stagingdev-stagingdev.cs45.force.com/LiveChatSite',
+			'https://stagingdev-fleetcornaf.cs4.force.com/LiveChatSite',
 			gslbBaseURL,
-			'00D8A0000005umK',
+			'00DP0000003zzZf',
 			'Customer_Support',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1cs-ph2.salesforceliveagent.com/content',
-				deploymentId: '5728A000000Cb61',
-				buttonId: '5738A000000CbNP',
-				baseLiveAgentURL: 'https://d.la2-c1cs-ph2.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I8A00000000GsUAI_17500f735f9',
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-ia2.salesforceliveagent.com/content',
+				deploymentId: '5723l000000LF0q',
+				buttonId: '5733l000000LG0p',
+				baseLiveAgentURL: 'https://d.la1-c1cs-ia2.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3l000000PBIFEA4_1752e0f09cf',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -80,4 +80,3 @@
 		initESW('https://service.force.com');
 	}
 </script>
-
